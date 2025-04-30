@@ -12,11 +12,9 @@ header {
 }
 
 .container {
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -27,8 +25,9 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
@@ -49,8 +48,9 @@ nav ul li a {
 
 .hero {
     background: url('images/3.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
@@ -390,10 +390,11 @@ footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .content {
