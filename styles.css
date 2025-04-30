@@ -49,7 +49,7 @@ nav ul li a {
 
 .hero {
     background: url('images/3.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
     display: flex;
@@ -388,4 +388,26 @@ footer {
     padding: 20px 80px;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
