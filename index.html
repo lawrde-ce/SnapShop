@@ -3,35 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping</title>
+    <title>SnapShop Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-container">
             <div class="logo">SNAPSHOP</div>
             <nav class="nav">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="login-button">Login</button>
         </div>
     </header>
+
     <main>
-        <div class="container1">
-            <div class="content">
+        <div class="hero">
+            <div class="hero1">
                 <h1>Shopping Right at Your Fingertips</h1>
                 <p>
                     Looking for the best deals and top-quality products? Shop now and enjoy fast 
                     delivery, secure payments, and exclusive offers all in one place!
                 </p>
                 <button id="cta-button">Get Started</button>
-            </div>
+            </div> 
         </div>
+
+        <section id="about">
+            <div class="about-container">
+                <h2>About SnapShop</h2>
+                <p>At SnapShop, we believe shopping should be effortless, enjoyable, and accessible to everyone. 
+                    Our platform is designed to bring you high-quality products, seamless navigation, and a 
+                    hassle-free shopping experience all at the best prices.
+                </p>
+                <p>From curated collections to fast delivery, SnapShop is committed to making online shopping 
+                    convenient and rewarding for our customers. Whether you're browsing for essentials or 
+                    indulging in something special, we've got you covered.
+                </p>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="pricing-container">
+                <h2>Pricing Plans</h2>
+                <p>Find a plan that fits your shopping needs. No hidden fees, just great deals!</p>
+        
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <p>Perfect for casual shoppers.</p>
+                        <p class="price">$9.99/month</p>
+                        <ul>
+                            <li>Access to exclusive discounts</li>
+                            <li>Standard shipping</li>
+                            <li>Customer support</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+        
+                    <div class="pricing-card popular">
+                        <h3>Premium</h3>
+                        <p>Best for frequent buyers.</p>
+                        <p class="price">$19.99/month</p>
+                        <ul>
+                            <li>Priority shipping</li>
+                            <li>Access to VIP deals</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+        
+                    <div class="pricing-card">
+                        <h3>Elite</h3>
+                        <p>Ultimate shopping experience.</p>
+                        <p class="price">$29.99/month</p>
+                        <ul>
+                            <li>Free express shipping</li>
+                            <li>Exclusive early access to new arrivals</li>
+                            <li>Dedicated account manager</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>Have questions? Need assistance? We're here to help.</p>
+        
+                <div class="contact-info">
+                    <div class="contact-box">
+                        <h3>Email</h3>
+                        <p>sample@snapshop.com</p>
+                    </div>
+                    <div class="contact-box">
+                        <h3>Phone</h3>
+                        <p>+639914098677</p>
+                    </div>
+                    <div class="contact-box">
+                        <h3>Location</h3>
+                        <p>Banilad, Cebu City</p>
+                    </div>
+                </div>
+        
+                <form class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>        
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">SNAPSHOP ONLINE</div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="images/4.png" alt="Facebook"></a>
+                <a href="https://Twitter.com" target="_blank"><img src="images/5.png" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/6.jpg" alt="Instagram"></a>
+            </div>
+            <p class="footer-credit">© 2025 SnapShop Online. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
