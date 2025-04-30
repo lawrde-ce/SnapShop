@@ -3,19 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
     background-color: #ff6b81;
     padding: 15px 0;
 }
-.container1 {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -25,60 +20,73 @@ header {
 }
 
 .logo {
-    color: #4b0082;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: bold;
+    color: #4b0082;
 }
 
 nav ul {
     list-style: none;
-    margin: 0; 
-    margin-right: 20%;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin-left: 50px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    font-weight: bold;
+    color: #333;
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s; 
 }
 
-main {
-    background-image: url('images/3.jpg');
+.nav ul li a:hover {
+    color: #ff6b81;
+}
+
+.hero {
+    background: url('images/3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
+    padding: 0 20px;
 }
-
-.content {
+.hero1 {
     width: 50%;
-}
-
-.content h1 {
+ }
+.hero1 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     color: #4b0082;
 }
 
-.content p {
+.hero1 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     color: #fff2f7;
     line-height: 1.5;
+}
+
+.login-button {
+    background-color: #ff6b81;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #d8435e;
 }
 
 button {
@@ -93,4 +101,291 @@ button {
 
 button:hover {
     background-color: #d8435e;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.about-container {
+    background-color:#f3a6b1; /* Clean white background */
+    padding: 50px;
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    text-align: center;
+    max-width: 800px; /* Constrain width for better readability */
+    margin: 40px auto; /* Center it */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-container:hover {
+    transform: scale(1.02); /* Slight zoom effect when hovered */
+}
+
+.about-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4b0082; /* Brand color */
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff2f7;
+    margin-bottom: 15px;
+}
+
+/* Add subtle entry animation */
+.about-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.about-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pricing-container {
+    background-color: #f3a6b1;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.pricing-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.pricing-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    color: #4b0082;
+    margin-bottom: 15px;
+}
+
+.pricing-card p.price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff6b81;
+    margin: 10px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-card ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card button {
+    background-color: #ff6b81;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pricing-card button:hover {
+    background-color: #d8435e;
+}
+
+/* Highlight the popular plan */
+.pricing-card.popular {
+    background-color: #ffedf2;
+    border: 2px solid #0f0708;
+}
+
+.contact-container {
+    background-color: #f3a6b1;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.contact-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    background-color: #f9f9f9;
+    padding: 2%px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-box h3 {
+    font-size: 22px;
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #ff6b81;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d8435e;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.footer-socials a img:hover {
+    opacity: 0.7;
+}
+
+.footer-credit {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
