@@ -60,6 +60,8 @@ nav ul li a {
 }
 .hero1 {
     width: 50px;
+    max-width: 300px;
+    margin: 0 auto;
  }
 .hero1 h1 {
     font-family: 'Times New Roman', Times, serif;
