@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('cta-button');
     button.addEventListener('click', function() {
-        alert('Aysa Pa Gud! Anga oi!');
+        window.location.href = 'product.html'; // Replace with your desired URL
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
