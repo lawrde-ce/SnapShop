@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('cta-button');
     button.addEventListener('click', function() {
-        window.location.href = 'product.html'; // Replace with your desired URL
+        window.location.href = 'product.html';
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
